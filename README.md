@@ -1,2 +1,2 @@
 # pedrolucassec.github.io
-Portfolio feito com Bootstrap
+Portfolio feito com HTML/CSS/JS/Bootstrap
