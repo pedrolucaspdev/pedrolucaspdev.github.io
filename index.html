@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="js/tailwindcss-3.3.1.1.js"></script>
+  </head>
+  <body>
+    <div class="@screen 2xl:text-center 2xl:mx-auto">
+      <div class="flex flex-col min-h-screen bg-gray-800">
+        <header aria-label="Site Header">
+          <div
+            id="menu"
+            class="invisible sm:visible fixed block z-10 w-screen mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8 bg-gray-900"
+          >
+            <div class="flex flex-1 items-center justify-center gap-8">
+              <nav
+                aria-label="Site Nav"
+                class="hidden sm:flex sm:gap-8 sm:text-base sm:font-bold sm:uppercase sm:tracking-wide sm:text-gray-300"
+              >
+            <a
+              href="#sobre"
+                  class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-gray-200"
+            >
+                  Sobre
+                </a>
+
+            <a
+              href="#projetos"
+                  class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-gray-200"
+            >
+                  Experiência
+                </a>
+
+                <a
+                  href="#skills"
+                  class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-gray-200"
+                >
+                  Tecnologias
+                </a>
+
+            <a
+              href="#contato"
+                  class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-green-400"
+            >
+                  Contato
+                </a>
+              </nav>
+      </div>
+          </div>
+        </header>
+
+      <div
+        id="sobre"
+          class="mx-auto max-w-screen-xl px-4 mt-2 py-4 sm:mt-16 sm:py-12 sm:px-6 lg:py-10 lg:px-8"
+      >
+          <div class="grid grid-cols-1 gap-8 mt-4 lg:grid-cols-2 lg:gap-16">
+          <div
+            class="relative h-64 overflow-hidden rounded-lg hover:border-b-4 hover:border-indigo-500 sm:h-80 lg:order-last lg:h-full shadow-md hover:shadow-2xl"
+          >
+            <img
+              alt="cafezal"
+                title="Sou atleta amador de Mountatin Bike nas horas vagas"
+              src="img/profile/profile.jpeg"
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+          </div>
+
+          <div class="lg:py-24">
+            <h2
+              class="text-3xl font-bold sm:text-4xl dark:text-white hover:underline hover:decoration-2 hover:underline-offset-8 hover:decoration-indigo-400"
+            >
+              Pedro Lucas Miranda
+            </h2>
+
+            <p class="mt-4 text-gray-300">
+              Desenvolvedor Back-end com experiência em
+              <a
+                class="text-indigo-400 hover:underline"
+                href="https://www.php.net/"
+                  title="site do PHP"
+                >PHP</a
+              >
+              e ênfase ao
+              <a
+                class="text-indigo-400 hover:underline after:content-['_↗']"
+                  title="site do Laravel"
+                href="https://laravel.com/"
+                >Laravel</a
+              >
+            </p>
+
+            <details
+              class="mt-4 group [&_summary::-webkit-details-marker]:hidden"
+            >
+              <summary
+                class="hover:border-l-4 hover:border-indigo-500 hover:rounded-xl flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-50"
+              >
+                <h2 class="font-medium text-gray-900">Clique aqui</h2>
+
+                <svg
+                  class="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+
+                <div
+                  class="bg-gray-900 mt-10 border rounded-md hover:bg-gray-950 hover:rounded-r-lg hover:border mt-10 text-1xl sm:text-[20px]"
+                >
+                  <p
+                    class="px-4 mt-2 leading-relaxed text-gray-50 hover:text-white font-mono"
+                  >
+                    Sou apaixonado por tecnologia desde os meus 7 anos quando
+                    ganhei meu primeiro computador, eu ficava fascinado com
+                    tanta informação em um lugar só, explorava todas
+                    funcionalidades daquele computador, tentava criar coisas e
+                    assim tive meu primeiro contato com programação.
+              </p>
+
+                  <p
+                    class="px-4 mt-4 leading-relaxed text-gray-50 hover:text-white font-mono hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-indigo-400"
+                  >
+                    Gosto de criar coisas novas e resolver problemas, sou
+                    fascinado por isso e me divirto bastante.
+              </p>
+
+                  <p
+                    class="px-4 mt-4 mb-2 leading-relaxed text-gray-50 hover:text-white font-mono"
+                  >
+                Procuro sempre inovar e me considero bastante focado, quando
+                    coloco algo na cabeça não paro até resolvê-lo, gosto de
+                    aprender coisas novas, tecnologias novas, sou um livro
+                    aberto, conhecimento é algo que valorizo e priorizo
+                    bastante.
+              </p>
+                </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+        <section class="bg-white dark:bg-gray-950">
+          <div class="container px-6 py-10 mx-auto">
+          <h1
+              id="projetos"
+              title="Projetos pessoais"
+              class="flex flex-wrap gap-x-4 text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white hover:underline hover:decoration-4 hover:underline-offset-8 hover:decoration-indigo-400"
+          >
+              Portfolio
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hover:w-8 hover:h-8 hover:text-indigo-400">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+              </svg>
+          </h1>
+
+            <div
+              class="grid grid-cols-1 gap-8 text-center mt-8 md:mt-16 md:grid-cols-2"
+            >
+              <div class="lg:flex bg-gray-900 hover:bg-gray-800 rounded-lg">
+                <a href="https://github.com/pedrolucaspdev/java-restapi">
+              <img
+                class="object-cover w-full h-56 rounded-lg lg:w-64 hover:saturate-50"
+                    src="img/projects/php.webp"
+                alt=""
+              />
+                </a>
+              <div class="flex flex-col justify-between gap-y-2 py-6 lg:mx-6">
+                <a
+                  href="https://github.com/pedrolucaspdev/crud-livewire"
+                  class="text-xl font-semibold text-gray-800 hover:underline dark:text-white"
+                >
+                  CRUD
+                </a>
+                <p class="text-white">
+                    Cadastro de produto utilizando todas operações CRUD
+                </p>
+                  <span
+                    class="text-sm text-gray-500 hover:underline hover:underline-offset-4 decoration-gray-500 dark:text-gray-300"
+                  >1 Abril 2023</span
+                >
+              </div>
+            </div>
+
+              <div class="lg:flex bg-gray-900 hover:bg-gray-800 rounded-lg">
+                <a href="https://github.com/pedrolucaspdev/java-restapi">
+              <img
+                class="object-cover w-full h-56 rounded-lg lg:w-64 hover:saturate-50"
+                    src="img/projects/spring.webp"
+                alt=""
+              />
+                </a>
+              <div class="flex flex-col justify-between gap-y-2 py-6 lg:mx-6">
+                <a
+                  href="https://github.com/pedrolucaspdev/java-restapi"
+                  class="text-xl font-semibold text-gray-800 hover:underline dark:text-white"
+                >
+                  Java REST API
+                </a>
+                  <p class="text-white">Cadastro de Pessoas</p>
+                  <span
+                    class="text-sm text-gray-500 hover:underline hover:underline-offset-4 dark:text-gray-300"
+                  >29 Abril 2022</span
+                >
+              </div>
+            </div>
+
+              <div class="lg:flex bg-gray-900 hover:bg-gray-800 rounded-lg">
+                <a href="https://github.com/pedrolucaspdev/covid-api">
+              <img
+                class="object-cover w-full h-56 rounded-lg lg:w-64 hover:saturate-50"
+                    src="img/projects/covid.jpg"
+                alt=""
+              />
+                </a>
+
+              <div class="flex flex-col justify-between gap-y-2 py-6 lg:mx-6">
+                <a
+                  href="https://github.com/pedrolucaspdev/covid-api"
+                  class="text-xl font-semibold text-gray-800 hover:underline dark:text-white"
+                >
+                  COVID API
+                </a>
+                  <p class="text-white">Notificação de casos de covid por UF</p>
+
+                  <span
+                    class="text-sm text-gray-500 hover:underline hover:underline-offset-4 dark:text-gray-300"
+                  >4 Junho 2022</span
+                >
+              </div>
+            </div>
+
+              <div class="lg:flex bg-gray-900 hover:bg-gray-800 rounded-lg">
+                <a href="https://github.com/pedrolucaspdev/CNPJ-API">
+              <img
+                class="object-cover w-full h-56 rounded-lg lg:w-64 hover:saturate-50"
+                    src="img/projects/php2.jpg"
+                alt=""
+              />
+                </a>
+              <div class="flex flex-col justify-between gap-y-2 py-6 lg:mx-6">
+                <a
+                  href="https://github.com/pedrolucaspdev/CNPJ-API"
+                  class="text-xl font-semibold text-gray-800 hover:underline dark:text-white"
+                >
+                  CNPJ API
+                </a>
+
+                <p class="text-white">Busca informações de um CNPJ - CLI</p>
+                  <span
+                    class="text-sm text-gray-500 hover:underline hover:underline-offset-4 dark:text-gray-300"
+                  >30 Novembro 2021</span
+                >
+              </div>
+            </div>
+
+              <div class="lg:flex bg-gray-900 hover:bg-gray-800 rounded-lg">
+                <a href="https://github.com/pedrolucaspdev/cepv2-brasil">
+              <img
+                class="object-cover w-full h-56 rounded-lg lg:w-64 hover:saturate-50"
+                    src="img/projects/vue.jpg"
+                alt=""
+              />
+                </a>
+              <div class="flex flex-col justify-between gap-y-2 py-6 lg:mx-6">
+                <a
+                  href="https://github.com/pedrolucaspdev/cepv2-brasil"
+                  class="text-xl font-semibold text-gray-800 hover:underline dark:text-white"
+                >
+                  CEPV2 - Brasil
+                </a>
+                  <p class="text-white">
+                    Serviço de busca por CEP feito em Vue
+                  </p>
+
+                  <span
+                    class="text-sm text-gray-500 hover:underline hover:underline-offset-4 dark:text-gray-300"
+                  >6 Julho 2022</span
+                >
+              </div>
+            </div>
+
+              <div class="lg:flex bg-gray-900 hover:bg-gray-800 rounded-lg">
+                <a href="https://github.com/pedrolucaspdev/weather-app">
+              <img
+                class="object-cover w-full h-56 rounded-lg lg:w-64 hover:saturate-50"
+                    src="img/projects/react.png"
+                alt=""
+              />
+                </a>
+              <div class="flex flex-col justify-between gap-y-2 py-6 lg:mx-6">
+                <a
+                  href="https://github.com/pedrolucaspdev/weather-app"
+                  class="text-xl font-semibold text-gray-800 hover:underline dark:text-white"
+                >
+                    Previsão do Tempo - API
+                </a>
+
+                <p class="text-white">
+                    API de previsão feito com React + TailwindCSS
+                </p>
+                  <span
+                    class="text-sm text-gray-500 hover:underline hover:underline-offset-4 dark:text-gray-300"
+                  >6 Junho 2022</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section
+      id="skills"
+      class="text-white bg-gradient-to-bl from-gray-800 via-gray-900 to-black py-10"
+    >
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center flex flex-wrap justify-center gap-x-4">
+          <h2
+            class="text-3xl font-extrabold sm:text-4xl hover:underline hover:decoration-4 hover:underline-offset-8 hover:decoration-indigo-400" title="Conhecimentos"
+          >
+            Skills
+          </h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 hover:w-8 hover:h-8 hover:text-indigo-400"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+            />
+          </svg>
+        </div>
+        <div class="mt-16 mb-6">
+          <div
+            class="flex flex-wrap justify-center sm:grid sm:grid-cols-6 lg:grid-cols-8 gap-x-8 gap-y-8 bg-gray-800 hover:bg-slate-800 rounded-lg p-4"
+          >
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+                <img
+                  src="img/skills/html5.svg"
+                  alt="HTML"
+                  class="h-12"
+                  title="(HTML) - Utilizada para criação de sites"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                <img
+                  src="img/skills/css3.svg"
+                  alt="CSS3"
+                  class="h-12"
+                  title="(CSS) - Estilização de sites"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://www.php.net/">
+                <img
+                  src="img/skills/php.svg"
+                  alt="PHP"
+                  class="h-12"
+                  title="(PHP) - Linguagem de programação utilizada para construir sites dinâmicos, extensões de integração de aplicações e agilizar no desenvolvimento de um sistema"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://www.laravel.com">
+                <img
+                  src="img/skills/laravel.svg"
+                  alt="Laravel"
+                  class="h-12"
+                  title="(Laravel) - Framework PHP gratuito e de código aberto, utilizado no desenvolvimento de sistemas para web"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+              >
+                <img
+                  src="img/skills/javascript.svg"
+                  alt="JavaScript"
+                  class="h-12"
+                  title="(Javascript) - Linguagem de programação usada por desenvolvedores para fazer páginas interativas da Internet"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://getcomposer.org">
+                <img
+                  src="img/skills/composer.svg"
+                  alt="Composer"
+                  class="h-12"
+                  title="(Composer) - Gerenciador de dependências PHP"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://tailwindcss.com">
+                <img
+                  src="img/skills/tailwindcss.svg"
+                  alt="TailwindCSS"
+                  class="h-12"
+                  title="(TailwindCSS) - Framework do CSS que nos fornece classes utilitárias de propósito único que são, em sua maioria, opinativas e que nos ajudam a projetar nossas páginas da web diretamente de dentro de nossos arquivos de marcação"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://getbootstrap.com/">
+                <img
+                  src="img/skills/bootstrap.svg"
+                  alt="Bootstrap"
+                  class="h-10"
+                  title="(Bootstrap) - Framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://www.java.com/pt-BR/">
+                <img
+                  src="img/skills/java.svg"
+                  alt="Java"
+                  class="h-12"
+                  title="(Java) - Linguagem de programação rápida, segura e confiável para codificar tudo, desde aplicações móveis e software empresarial até aplicações de big data e tecnologias do servidor"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://spring.io/">
+                <img
+                  src="img/skills/spring.png"
+                  alt="Spring"
+                  class="h-12"
+                  title="(Spring) - Ecossistema de desenvolvimento para facilitar a criação de aplicações Java utilizando diversos módulos independentes"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://www.python.org/">
+                <img
+                  src="img/skills/python.svg"
+                  alt="Python"
+                  class="h-12"
+                  title="(Python) - Linguagem de programação amplamente usada em aplicações da Web, desenvolvimento de software, ciência de dados e machine learning"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://git-scm.com/">
+                <img
+                  src="img/skills/git.svg"
+                  alt="Git"
+                  class="h-14"
+                  title="(Git) - É usado para controlar o histórico de alterações de arquivos e principalmente de projetos de desenvolvimento de software"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://www.heroku.com/">
+                <img
+                  src="img/skills/heroku.svg"
+                  alt="Heroku"
+                  class="h-12"
+                  title="(Heroku) - Trata-se de uma PaaS (Plataforma como um Serviço) que permite hospedagem, configuração, testagem e publicação de projetos virtuais na nuvem"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://www.mysql.com/">
+                <img
+                  src="img/skills/mysql.svg"
+                  alt="Mysql"
+                  class="h-12"
+                  title="(MySQL) - Sistema open-source de gerenciamento de base de dados relacional"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://www.postgresql.org/">
+                <img
+                  src="img/skills/postgresql.svg"
+                  alt="PostgreSQL"
+                  class="h-12"
+                  title="(PostgreSQL) - Banco de dados objeto-relacional em que cada coisa criada é tratada como um objeto, tais como bancos de dados, tabelas, views, triggers, etc"
+                />
+              </a>
+            </div>
+            <div
+              class="col-span-2 sm:col-span-1 flex justify-center items-center hover:scale-125"
+            >
+              <a href="https://vuejs.org/">
+                <img
+                  src="img/skills/vue.svg"
+                  alt="Vue"
+                  class="h-12"
+                  title="(VueJS) - Serve para criar aplicações SPA (Single Page Applications) e desenvolver vários outros formatos de interfaces com objetivo na interação e experiência do usuário"
+                />
+              </a>
+            </div>
+            <!-- Adicione mais ícones aqui -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <footer id="contato" aria-label="Site Footer" class="bg-gray-900 mt-auto">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-16">
+          <div class="sm:flex sm:items-center sm:justify-center">
+            <ul
+              class="flex flex-wrap justify-center gap-8 sm:justify-start md:gap-16 py-3"
+            >
+              <li class="hover:scale-125">
+                <a
+                  href="mailto:pedrolucassec@gmail.com?subject=Assunto&body=Conteúdo do assunto..."
+                  rel="noreferrer"
+                  target="_blank"
+                  title="Gmail"
+                  class="text-green-500 transition hover:text-green-700/75 dark:text-green-400 dark:hover:text-green-500/75 block border-b-2 py-2 border-transparent leading-[4em] hover:border-current"
+                >
+                  <span class="sr-only">Gmail</span>
+
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 sm:h-7 sm:w-7"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="hover:scale-125">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100085462431529"
+                  rel="noreferrer"
+                  target="_blank"
+                    title="Facebook"
+                  class="text-blue-500 transition hover:text-blue-500/75 dark:text-blue-500 dark:hover:text-blue-500/75 block border-b-2 py-2 border-transparent leading-[4em] hover:border-current"
+                >
+                  <span class="sr-only">Facebook</span>
+                  <svg
+                    class="h-6 w-6 sm:h-7 sm:w-7"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="hover:scale-125">
+                <a
+                  href="https://www.instagram.com/pedrolucaspdev/"
+                  rel="noreferrer"
+                  target="_blank"
+                    title="Instagram"
+                  class="text-pink-500 transition hover:text-pink-500/75 dark:text-pink-500 dark:hover:text-pink-500/75 block border-b-2 py-2 border-transparent leading-[4em] hover:border-current"
+                >
+                  <span class="sr-only">Instagram</span>
+                  <svg
+                    class="h-6 w-6 sm:h-7 sm:w-7"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="hover:scale-125">
+                <a
+                  href="https://www.linkedin.com/in/pedro-lucas-carvalho-miranda-5956b01a0/"
+                  rel="noreferrer"
+                  target="_blank"
+                    title="Linkedin"
+                  class="text-blue-700 transition hover:text-blue-500/75 dark:text-blue-400 dark:hover:text-blue-500/75 block border-b-2 py-2 border-transparent leading-[4em] hover:border-current"
+                >
+                  <span class="sr-only">Linkedin</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 sm:h-6 sm:w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="hover:scale-125">
+                <a
+                  href="https://www.github.com/pedrolucaspdev"
+                  rel="noreferrer"
+                  target="_blank"
+                    title="Github"
+                  class="text-slate-500 transition hover:text-slate-700/75 dark:text-slate-50 dark:hover:text-slate-100/75 block border-b-2 py-2 border-transparent leading-[4em] hover:border-current"
+                >
+                  <span class="sr-only">GitHub</span>
+                  <svg
+                    class="h-6 w-6 sm:h-7 sm:w-7"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+</body>
+
+</html>
